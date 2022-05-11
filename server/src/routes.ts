@@ -6,18 +6,16 @@ import { SubmitFeedbackUseCase } from './use-cases/submit-feedback-use-case';
 export const routes = express.Router()
 
 routes.post('/feedbacks', async (req, res) => {
-  
-  const prismaFeedbacksRepository = new PrismaFeedbacksRepository()
-  const nodemailerMailAdapter = new NodemailerMailAdapter()
-  
-  const submitFeedbackUseCase = new SubmitFeedbackUseCase(
-    prismaFeedbacksRepository,
-    nodemailerMailAdapter
-    )
+  const { type, comment, screenshot } = req.body;
   
   try {
-
-    const { type, comment, screenshot } = req.body;
+    const prismaFeedbacksRepository = new PrismaFeedbacksRepository()
+    const nodemailerMailAdapter = new NodemailerMailAdapter()
+    
+    const submitFeedbackUseCase = new SubmitFeedbackUseCase(
+      prismaFeedbacksRepository,
+      nodemailerMailAdapter
+    )
     
     await submitFeedbackUseCase.execute({
       type,
@@ -27,6 +25,7 @@ routes.post('/feedbacks', async (req, res) => {
     
     return res.status(201).send();
   }catch (err) {
-    return res.status(400).json({ message: 'Error submiting feedback.' })
+    return res.status(500).send();
+    // json({ message: 'Error submiting feedback.' })
   }
 });
