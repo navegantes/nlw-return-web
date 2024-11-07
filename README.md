@@ -9,13 +9,13 @@
 <h1 align="center">Web</h1>
 
 <p align="center">
-  <img alt="Principal linguagem do projeto" src="https://img.shields.io/github/languages/top/navegantes/web?color=56BEB8">
+  <img alt="Principal linguagem do projeto" src="https://img.shields.io/github/languages/top/navegantes/nlw-return-web?color=56BEB8">
 
-  <img alt="Quantidade de linguagens utilizadas" src="https://img.shields.io/github/languages/count/navegantes/web?color=56BEB8">
+  <img alt="Quantidade de linguagens utilizadas" src="https://img.shields.io/github/languages/count/navegantes/nlw-return-web?color=56BEB8">
 
-  <img alt="Tamanho do repositório" src="https://img.shields.io/github/repo-size/navegantes/web?color=56BEB8">
+  <img alt="Tamanho do repositório" src="https://img.shields.io/github/repo-size/navegantes/nlw-return-web?color=56BEB8">
 
-  <img alt="Licença" src="https://img.shields.io/github/license/navegantes/web?color=56BEB8">
+  <img alt="Licença" src="https://img.shields.io/github/license/navegantes/nlw-return-web?color=56BEB8">
 
   <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/navegantes/web?color=56BEB8" /> -->
 
